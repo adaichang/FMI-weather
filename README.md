@@ -9,4 +9,5 @@ and replace the current key with the your own API in the /providers/weather-api.
 Uses native geolocation and geocoder API
 
 
-
+![screenshot1](https://github.com/adaichang/FMI-weather/blob/master/Capture.JPG)
+![screenshot2](https://github.com/adaichang/FMI-weather/blob/master/output.JPG)
