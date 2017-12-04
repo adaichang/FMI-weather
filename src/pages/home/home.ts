@@ -21,7 +21,9 @@ export class HomePage {
   constructor(public navCtrl: NavController,
     private weatherProvider:WeatherApiProvider,
     public geo: Geolocation,
-    private nativeGeocoder: NativeGeocoder) {
+    private nativeGeocoder: NativeGeocoder,
+    //private reverseGeocode: NativeGeocoderReverseResult
+  ) {
 
   }
 
@@ -32,10 +34,9 @@ export class HomePage {
         console.log(this.lat, this.lon );
 
         this.nativeGeocoder.reverseGeocode(this.lat, this.lon)
-        .then((result: NativeGeocoderReverseResult) => 
-        console.log(JSON.stringify(result)))
+        .then((result: NativeGeocoderReverseResult) => console.log(JSON.stringify(result)))
         
-
+       
     }).catch( err => console.log(err));
     
 
